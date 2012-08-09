@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/*	CSS Document 
+	Mobile Porfolio Prototype
+	V. 1.0
+	Author: Chris Allison
+*/
+#home {
+	background-image:url(../imgs/stacked_circles.png);
+}
+/*======= Header styles ========*/
+header {
+	display:block;
+	height:47px;
+	background-image:url(../imgs/header_bg.png);
+	background-repeat:repeat-x;
+	margin-top:-2px;
+}
+header img {
+	margin-top:12px;
+}
+header p {
+	margin:0;
+	padding:0;
+	text-align:center;	
+}
+/*======= Custom Icon styles ========*/
+#resume .ui-icon {
+	background:url(../imgs/tab_nab_03.png) 50% 50% no-repeat;
+	background-position:top center;
+}
+#gallery .ui-icon {
+	background:url(../imgs/tab_nab_05.png) 50% 50% no-repeat;
+	background-position:top center;
+}
+#hatch .ui-icon {
+	background:url(../imgs/tab_nab_07.png) 50% 50% no-repeat;
+	background-position:top center;
+}
+#contact .ui-icon {
+	background:url(../imgs/tab_nab_09.png) 50% 50% no-repeat;
+	background-position:top center;
+}
+#social .ui-icon {
+	background:url(../imgs/tab_nab_11.png) 50% 50% no-repeat;
+	background-position:top center;
+}
+/*======= ui-btn active state ========*/
+.active .ui-btn-inner { 
+	background-image:url(../imgs/btn_bg_03.png);
+}
+/*======= Resets styles on Navbar ========*/
+.noStyle{
+	margin:0!important;
+	height:46px;
+}
+.noStyle .ui-btn .ui-icon{
+	width: 30px!important; 
+	height: 30px!important; 
+	margin-left: -15px !important; 
+	box-shadow: none!important;
+	border-radius: 0 !important;	 
+	
+	-moz-box-shadow: none!important; 
+	-webkit-box-shadow: none!important; 
+	-webkit-border-radius: 0 !important; 
+}
+.noStyle .ui-btn .ui-btn-inner { 
+	font-size:11px;
+}
+/*======= Header image styles ========*/
+.ui-content {
+	padding:0;	
+}
+#headImg {
+	width:100%;
+	margin-top:-10px;
+}
+/*======= Twitter section styles ========*/
+#twitter {
+	/* width:100%; ==> This didnt work, had to specify in html? */
+	margin:0 10px;
+	overflow:hidden;
+}
+#twitter img {
+	margin:12px 0;	
+}
+.tweet {
+	font-size:12px;
+	line-height:1.2em;
+	color:#1363aa;
+	width:80%;
+	float:right;
+	font-style:italic;
+	font-weight:bold;
+}
+.tweet span {
+	font-size:14px;
+	font-weight:bold;
+}
+/*======= CTA Nav styles ========*/
+#ctaNav {
+	position:relative;
+	border:1px solid #86a240;	
+}
+.navBtns {
+	list-style-type:none;
+	margin:-1px 0 6px 0;
+	padding:0;
+}
+.navBtns li {
+	margin-bottom:-5px;	
+}
+.navBtns li a {
+	display:block;
+	width:51px;	
+	height:50px;
+	text-indent:-9999px;	
+}
+	/* button styles */
+.ctaResume {
+	background:url(../imgs/cta_nav_03.png) no-repeat;
+	background-position:top center;	
+}
+.ctaGallery {
+	background:url(../imgs/cta_nav_05.png) no-repeat;
+	background-position:top center;	
+}
+.ctaContact {
+	background:url(../imgs/cta_nav_07.png) no-repeat;
+	background-position:top center;	
+}
+/*======= About Me styles ========*/
+#about h2 {
+	color:#1363aa;
+	padding-left:10px;
+	font-size:18px;
+}
+#about p {
+	font-size:14px;
+	line-height:1.5em;
+	padding:0 10px;	
+}
