@@ -4,7 +4,9 @@
 	V. 1.0
 	Author: Chris Allison
 */
-#home {
+
+/*======= Set App Background ========*/
+#home, #resume, #gallery, #contact, #social {
 	background-image:url(../imgs/stacked_circles.png);
 }
 /*======= Header styles ========*/
@@ -24,23 +26,23 @@ header p {
 	text-align:center;	
 }
 /*======= Custom Icon styles ========*/
-#resume .ui-icon {
+.resume .ui-icon {
 	background:url(../imgs/tab_nab_03.png) 50% 50% no-repeat;
 	background-position:top center;
 }
-#gallery .ui-icon {
+.gallery .ui-icon {
 	background:url(../imgs/tab_nab_05.png) 50% 50% no-repeat;
 	background-position:top center;
 }
-#hatch .ui-icon {
+.hatch .ui-icon {
 	background:url(../imgs/tab_nab_07.png) 50% 50% no-repeat;
 	background-position:top center;
 }
-#contact .ui-icon {
+.contact .ui-icon {
 	background:url(../imgs/tab_nab_09.png) 50% 50% no-repeat;
 	background-position:top center;
 }
-#social .ui-icon {
+.social .ui-icon {
 	background:url(../imgs/tab_nab_11.png) 50% 50% no-repeat;
 	background-position:top center;
 }
@@ -75,14 +77,18 @@ header p {
 	width:100%;
 	margin-top:-10px;
 }
+#headImg img {
+	width:100%;
+	height:50%;
+	border-bottom:1px solid #86a240;	
+}
 /*======= Twitter section styles ========*/
 #twitter {
-	/* width:100%; ==> This didnt work, had to specify in html? */
 	margin:0 10px;
 	overflow:hidden;
 }
 #twitter img {
-	margin:12px 0;	
+	margin:18px 0;	
 }
 .tweet {
 	font-size:12px;
@@ -130,13 +136,84 @@ header p {
 	background-position:top center;	
 }
 /*======= About Me styles ========*/
-#about h2 {
+h2 {
 	color:#1363aa;
 	padding-left:10px;
 	font-size:18px;
+	margin-top:25px;
 }
 #about p {
 	font-size:14px;
 	line-height:1.5em;
 	padding:0 10px;	
+}
+#about .first {
+	margin-top:-15px;	
+}
+.rezList {
+	padding:15px 15px 0 15px;
+}
+.rezList li p {
+	margin-top:5px;
+}
+/*======= Resume styles ========*/
+	/* this is main profile image */
+.resumeContent img {
+	height:40%;
+	width:50%;
+	padding:10px;	
+}
+.test{
+	font-size:14px;
+	line-height:1.5em;
+	color:#555;
+	padding:5px 15px;
+	font-style:italic;
+	border-bottom:1px inset #777;
+}
+.test span {
+	font-size:12px;
+	color:#888;
+	font-style:normal;
+}
+#mainInfo {
+	position:absolute;
+	right:20px;
+	top:48px;
+	width:40%;
+}
+.grad {
+	color:#090;	
+}
+.prog {
+	color:#F60;	
+}
+#mainInfo img {
+	height:45px;
+	width:45px;
+	padding:0 4px;
+	margin-bottom:-10px;
+	margin-top:16px;	
+}
+#mainInfo h1, #mainInfo h2, #mainInfo h3, #mainInfo h4 {
+	font-size:14px;
+	line-height:1.5em;
+	margin:5px 0 5px 5px;
+	padding:0;
+}
+.ui-collapsible {
+	margin-bottom:-8px;
+}
+.skills .ui-btn-text {
+	padding-left:5px;	
+}
+.skills img {
+	height:50px;
+	width:50px;
+	margin:10px;
+	margin-top:5px;	
+}
+.skills .ui-li {
+	padding-top:30px;
+	padding-bottom:0;
 }
