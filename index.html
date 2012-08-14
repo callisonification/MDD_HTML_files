@@ -73,7 +73,7 @@
         	<h2>Education History</h2>
                 <li>Virginia High School
                 	<p>1998-2002</p>
-                	<p>High School :: <span class="grad">Graduated</span></p>
+                	<p>High School <b>::</b> <span class="grad">Graduated</span></p>
                     <span class="ui-li-count">2.0 GPA</span>
                 </li>
                 <li>Virginia Intermont
@@ -88,13 +88,13 @@
                 </li>
                 <li>Northeast State Tech
                 	<p>2006-2009</p>
-                	<p>College :: <span class="grad">Graduated</span></p>
+                	<p>College <b>::</b> <span class="grad">Graduated</span></p>
                     <p>Associates Of Applied Science - Web Design</p>
                     <span class="ui-li-count">2.8 GPA</span>
                 </li>
                 <li>Full Sail University
                 	<p>2010-2012</p>
-                	<p>College :: <span class="prog">In Progress</span></p>
+                	<p>College <b>::</b> <span class="prog">In Progress</span></p>
                     <p>Bachelors of Science - Web Design and Development </p>
                     <span class="ui-li-count">3.6 GPA</span>
                 </li>
@@ -118,7 +118,7 @@
                 <li>Awarded Top Shift</li>
                 <li>Awarded MVP Manager</li>
         </ul>
-        <h2>Skill Set</h2>
+        <h2 class="margin-fix">Skill Set</h2>
         	<div data-role="collapsible" data-iconpos="right" class="skills">
             	<h3>Programs</h3>
                 <ul data-role="listview" data-theme="a">
@@ -179,7 +179,7 @@
                     <li><img src="imgs/icons/Control-Panel.png" title="development" />Data Queries</li>
                 </ul>
             </div>
-        <h2>Testimonials</h2>
+        <h2 class="margin-fix">Testimonials</h2>
             <p class="test">“Chris is a growing leader who possess several managerial skills. Over the past two years, he has managed our inbound and outbound reservations team consisting of 40 plus agents and two support staff leaders. In his tenure, he has been managed and directed these employees to create 26,000 timeshare tours leading to $29 million in timeshare sales. In addition to his managerial skills, he has created an employee based intranet which serviced our entire department as a platform to store information for 30 plus resort locations in the continental US and Puerto Rico.”<br /><span>Ian McGuire :: Director, Wyndham Vacation Ownership</span></p>
             <p class="test">“I have managed Chris during the first part of his employment and could always count on him to go above and beyond the expectation and impress me on a daily basis. I had the privilege of watching Chris grow quickly from my subordinate into an incredibly competitive colleague who keeps me on my toes. I admire Chris’s drive for achievement and his ability to manage a large group of people to see and perform his vision for success. Chris is an asset to any company looking for professional leader who doesn’t just strive for results but raises the bar and redefines standard expectations.”<br /><span>Suzanne Vannoy :: Supervisor, Wyndham Vacation Ownership</span></p>
             <p class="test">“I'VE HAD THE PLEASURE OF WORKING WITH CHRIS AT WYNDHAM VACATION RESORTS THIS PAST YEAR. CHRIS EXHIBITS A HIGH LEVEL OF MATURITY AND JUDGEMENT IN HIS SUPERVISOR'S ROLE. HE HAS GREAT PEOPLE SKILLS, IS A TEAM BUILDER, AND IS VERY SAVY WHEN IT COMES TO THE BUSINESS USE OF INFORMATION TECHNOLOGY. I WOULD ENCOURAGE ANYONE TO TAKE A SERIOUS LOOK AT THIS YOUNG PROFESSIONAL.”<br /><span>Regg Bonnevie :: Reservations, Wyndham Vacation Ownership</span></p>
@@ -227,8 +227,18 @@
   <header>
     <p><img src="imgs/logo_03.png" title="CmA designs" /></p>
   </header>
-  <section data-role="content">
-    <p>Contact form goes here (should handle both e-mail and sms)</p>
+  <section data-role="content" class="form">
+    <form action="?" method="post">
+      <label for="name">Contact Name</label>
+      <input type="text" name="name" id="name" data-mini="true" />
+      <label for="email">Contact Email</label>
+      <input type="text" name="email" id="email" data-mini="true" />
+      <label for="mssg">Message</label>
+      <textarea cols="10" rows="5" name="mssg" id="mssg" data-mini="true">Type your message here...</textarea>
+      <input type="submit" data-theme="b" data-inline="true" data-mini="true" value="Send Email" />
+      <input type="submit" data-theme="b" data-inline="true" data-mini="true" value="Send Text" />
+      <input type="reset" data-theme="a" data-inline="true" data-mini="true" value="Reset" id="reset" />
+    </form>
   </section>
   <footer data-role="footer" data-position="fixed">
     <div data-role="navbar" class="noStyle">
@@ -249,8 +259,29 @@
   <header>
     <p><img src="imgs/logo_03.png" title="CmA designs" /></p>
   </header>
-  <section data-role="content">
-    <p>Social badges and page re-directs</p>
+  <section data-role="content" id="connect">
+    <ul data-role="listview">
+      <li data-wrapperrels="div"> <img src="imgs/li.png" /> <a href="http://www.linkedin.com/profile/view?id=37270128" class="connect">
+        <h4>LinkedIn</h4>
+        <p>Chris Allison</p>
+        </a> </li>
+      <li data-wrapperrels="div"> <img src="imgs/fb.png" /> <a href="http://www.facebook.com/callisonification" class="connect">
+        <h4>Facebook</h4>
+        <p>/callisonification</p>
+        </a> </li>
+      <li data-wrapperrels="div"> <img src="imgs/ig.png" /> <a href="http://followgram.me/callisonification" class="connect">
+        <h4>InstaGram</h4>
+        <p>@Callisonification</p>
+        </a> </li>
+      <li data-wrapperrels="div"> <img src="imgs/gplus.png" /> <a href="http://gplus.to/callis0nification" class="connect">
+        <h4>Google+</h4>
+        <p>/callis0nification</p>
+        </a> </li>
+      <li data-wrapperrels="div"> <img src="imgs/gmail.png" /> <a href="mailto:callisonification@gmail.com?Subject=Hello Chris" class="connect">
+        <h4>GMail</h4>
+        <p>Callisonification@gmail.com</p>
+        </a> </li>
+    </ul>
   </section>
   <footer data-role="footer" data-position="fixed">
     <div data-role="navbar" class="noStyle">

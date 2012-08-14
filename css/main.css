@@ -46,6 +46,11 @@ header p {
 	background:url(../imgs/tab_nab_11.png) 50% 50% no-repeat;
 	background-position:top center;
 }
+	/* background image active effect */
+.active .ui-icon {
+	background-position:bottom center;
+	margin-top:-5px;
+}
 /*======= ui-btn active state ========*/
 .active .ui-btn-inner { 
 	background-image:url(../imgs/btn_bg_03.png);
@@ -142,6 +147,9 @@ h2 {
 	font-size:18px;
 	margin-top:25px;
 }
+.margin-fix {
+	margin-bottom:-5px;	
+}
 #about p {
 	font-size:14px;
 	line-height:1.5em;
@@ -170,6 +178,9 @@ h2 {
 	padding:5px 15px;
 	font-style:italic;
 	border-bottom:1px inset #777;
+}
+.test:last-child {
+	border-bottom:none;	
 }
 .test span {
 	font-size:12px;
@@ -204,6 +215,9 @@ h2 {
 .ui-collapsible {
 	margin-bottom:-8px;
 }
+.skills .first-ul {
+	margin-top:-8px;
+}
 .skills .ui-btn-text {
 	padding-left:5px;	
 }
@@ -216,4 +230,34 @@ h2 {
 .skills .ui-li {
 	padding-top:30px;
 	padding-bottom:0;
+}
+/*======= Resume styles ========*/
+#connect {
+	margin-bottom:-10px;	
+}
+#connect li img {
+	width:50px;
+	height:50px;
+	padding:1em 1.5em;
+}
+.connect {
+	margin-top:-85px;
+	margin-left:90px;
+	padding-bottom:0;
+}
+.connect p {
+	font-weight:700;
+	font-size:11px;
+	color:#09F;
+}
+/*======= Contact styles ========*/
+#mssg {
+	height:30%;
+	margin-bottom:1em;	
+}
+.form {
+	margin-left:1em;	
+}
+.form input, .form textarea {
+	width:90%;	
 }
