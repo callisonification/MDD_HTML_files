@@ -18,6 +18,7 @@ $(document).ready(function() {
 	})
 	//end of textarea effect
 	
+	//Masonary image gallery function
 	$('#masonary').isotope({
 	  // options
 	  masonary: {
@@ -25,7 +26,23 @@ $(document).ready(function() {
 		gutterWidth: 5
 	  }
 	});
-
+	//end Masonary code
+	
+	$('.pics').cycle({
+		fx: 'scrollRight',
+		speed: 500,
+		timeout: 5000	
+	});
+	
+	setInterval(function(){
+		$('.navBtns li a').each(function(){
+			if( $(this).hasClass('active') ){
+				$(this).removeClass('active');
+			}else{
+				$(this).addClass('active');	
+			}
+		})	
+	}, 5000)	
 });
 
 
