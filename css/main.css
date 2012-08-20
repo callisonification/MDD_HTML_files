@@ -291,13 +291,23 @@ h2 {
 	margin-left:10px;	
 }
 /*======= Gallery styles ========*/
-#masonary .item img {
-	width:150px;
-	height:150px;
-	margin:5px;	
+#masonry {
+	width:100%;
+	padding:0 10px;	
+}
+#masonry .item img {
+	width:145px;
+}
+#masonry .item .odd {
+	width:300px;
+}
+#masonry .item a {
+	display:block;
+	margin:0;
+	padding:0;	
 }
 .buttonGroup {
-	width:170px;
+	width:180px;
 	display:block;
 	margin:10px auto -5px auto;
 }

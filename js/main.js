@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
 	//Scope control Vars and functions here but fire them on the specific pageinit that calls for them.
-	
+
 	//functions to handle textarea focus/blur effects
 	var ta = $('#mssg');
 	
@@ -16,34 +16,72 @@ $(document).ready(function() {
 			$(this).val('Type your message here...');
 		}
 	})
-	//end of textarea effect
 	
 	//Masonary image gallery function
-	$('#masonary').isotope({
-	  // options
-	  masonary: {
-		columnWidth: 300,
-		gutterWidth: 5
-	  }
+	$(window).load(function(){
+		$('#masonry').isotope({
+		  // options
+		  masonry: {
+			columnWidth: 155,
+			gutterWidth: 10
+		  }
+		});
 	});
-	//end Masonary code
 	
+	//cycles cta images every 5 sec
 	$('.pics').cycle({
 		fx: 'scrollRight',
 		speed: 500,
 		timeout: 5000	
 	});
 	
+	//changes active state on ctaNav when slideshow changes
 	setInterval(function(){
-		$('.navBtns li a').each(function(){
-			if( $(this).hasClass('active') ){
-				$(this).removeClass('active');
-			}else{
-				$(this).addClass('active');	
-			}
-		})	
-	}, 5000)	
-});
+		var rez = $('.ctaResume');
+		var gal = $('.ctaGallery');
+		var con = $('.ctaContact');
+		
+		if( $(rez).hasClass('active') ){
+			$(rez).removeClass('active');
+			$(gal).addClass('active');	
+		}else if( $(gal).hasClass('active') ){
+			$(gal).removeClass('active');
+			$(con).addClass('active');
+		}else if( $(con).hasClass('active') ){
+			$(con).removeClass('active');
+			$(rez).addClass('active');	
+		}
+		
+	}, 5500)
+	
+	//filter functionality
+	var pb = $('.printBtn');
+	var wb = $('.webBtn');
+	var ab = $('.allBtn');
+	
+	$(pb).click(function(){
+		$('#masonry').isotope({
+			filter: '.print'
+		});
+		return false;
+	});
+	
+	$(wb).click(function(){
+		$('#masonry').isotope({
+			filter: '.web'
+		});
+		return false;
+	});
+	
+	$(ab).click(function(){
+		$('#masonry').isotope({
+			filter: '*'
+		});
+		return false;
+	});
+
+	
+});//end of doc.ready
 
 
 	tempist = function (){
