@@ -79,8 +79,20 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-
 	
+	//AJAX call to retrieve quote data
+	$.ajax({
+		url: "php/curl.php",
+		type: 'GET',
+		dataType:'text',
+		success: function(data){
+			var newData = data.substr(0, data.length - 1);
+			var json = JSON.parse(newData) ;
+			var p = $('.quote');
+			$(p).html(json.quote);
+		},
+	});
+		
 });//end of doc.ready
 
 

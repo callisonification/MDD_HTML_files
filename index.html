@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 <link rel="stylesheet" href="css/main.css" type="text/css" />
 <link rel="stylesheet" href="css/isotope.css" type="text/css" />
-<title>Portfolio Test</title>
+<title>Chris Allison - Mobile Portfolio</title>
 </head>
 
 <body>
@@ -29,8 +29,8 @@
   </header>
   <section data-role="content">
     <div id="headImg"> <img src="imgs/test_2.jpg" title="Header Image" /> </div>
-    <div id="twitter"> <img src="imgs/twitter_bird_03.png" title="Twitter&reg;" />
-      <p class="tweet"><span>"</span>Hendrerit in vulputate velit esse molestie consequat vel illum dolore eu feugiat nulla. Blandit praesent luptatum zzril delenit augue duis dolore te.<span>"</span></p>
+    <div id="quotes"> <img src="imgs/twitter_bird_03.png" title="Twitter&reg;" />
+      <p class="quote"><span>"</span>Hendrerit in vulputate velit esse molestie consequat vel illum dolore eu feugiat nulla. Blandit praesent luptatum zzril delenit augue duis dolore te.<span>"</span></p>
     </div>
     <div id="ctaNav">
       <ul class="navBtns">
@@ -220,7 +220,7 @@
     </div>
     <p>Tap on an image to see details</p>
     <div id="masonry">
-      <div class="item print"><a href="#"><img src="gallery/thumbs/gaugesThumb.jpg" class="odd"/></a></div>
+      <div class="item print"><a href="#details"><img src="gallery/thumbs/gaugesThumb.jpg" class="odd"/></a></div>
       <div class="item print"><a href="#"><img src="gallery/thumbs/fishLogo.jpg" /></a></div>
       <div class="item print"><a href="#"><img src="gallery/thumbs/aicThumb.jpg" /></a></div>
       <div class="item web"><a href="#"><img src="gallery/thumbs/sfw2Thumb.jpg" class="odd"/></a></div>
@@ -322,5 +322,30 @@
   </footer>
 </article>
 <!-- ==========  end Page  ========== -->
+<!-- ==========  Page  ============= -->
+<article id="details" data-role="page">
+  <header>
+    <p><img src="imgs/logo_03.png" title="CmA designs" /></p>
+  </header>
+  <section data-role="content" id="connect">
+  	<h3>Name of Work</h3>
+    <img src="gallery/gauges.jpg" title="Digital Car Guage" width="100%" />
+    <p>Ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit! Et quinta decima eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes. Nihil imperdiet doming id quod mazim placerat facer possim assum typi non habent claritatem insitam est. Ut laoreet dolore magna aliquam erat volutpat ut. Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod?</p>
+  </section>
+  <footer data-role="footer" data-position="fixed">
+    <div data-role="navbar" class="noStyle">
+      <ul>
+        <li><a href="#resume" class="resume" data-icon="custom">Resume</a></li>
+        <li><a href="#gallery" class="gallery active" data-icon="custom">Gallery</a></li>
+        <li><a href="#home" class="hatch" data-icon="custom">Home</a></li>
+        <li><a href="#contact" class="contact" data-icon="custom">Contact</a></li>
+        <li><a href="#social" class="social" data-icon="custom">Social</a></li>
+      </ul>
+    </div>
+    <!-- /navbar --> 
+  </footer>
+</article>
+<!-- ==========  end Page  ========== -->
+
 </body>
 </html>
