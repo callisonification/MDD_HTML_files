@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Car Gauges",
+    "desc": "These guagues were created in Photoshop and were made to represent the course progression for an online driving school. As the user would progress through the course the psuedo-speedometer would increase letting the driver know where they were in the course.",
+    "thumb": "gallery/thumbs/gaugesThumb.jpg",
+	"image": "gallery/gauges.jpg",
+	"format" : "print",
+	"isOdd" : "odd"
+  },
+  {
+    "id": 2,
+    "name": "Tri-Cities Reef Club logo",
+    "desc": "This logo was created in Photoshop and was done for a friend for his local coral reef and exotic fish social club. While this is too detailed to be an effective logo the client was still satisfied with the end result and was able to use it for his club.",
+    "thumb": "gallery/thumbs/fishLogo.jpg",
+	"image": "gallery/fishLogo.jpg",	
+	"format" : "print",
+	"isOdd" : "no"
+  },
+  {
+    "id": 3,
+    "name": "Alice In Chains concert poster",
+    "desc": "Project created in Photoshop for Full Sail class 'History of Visual Communications' (HVC)",
+    "thumb": "gallery/thumbs/aicThumb.jpg",
+	"image": "gallery/aic.jpg",	
+	"format" : "print",
+	"isOdd" : "no"
+  },
+    {
+    "id": 4,
+    "name": "Chronos Task Management Service",
+    "desc": "Chronos is a prototype task management system that allows users to keep track of clients and projects as well as tasks for those projects. The system provides the user with a comfortable, easy-to-use content management system that allows for the user to keep track of all of their client information. This was built for Full Sail class 'Scripting for Web II'",
+    "thumb": "gallery/thumbs/sfw2Thumb.jpg",
+	"image": "gallery/sfw2.jpg",	
+	"format" : "web",
+	"isOdd" : "odd"
+  },
+  {
+    "id": 5,
+    "name": "PaintBall Journals Ui design",
+    "desc": "A site and Ui specific design that was created for Full Sail class 'Advanced Design Techniques'",
+    "thumb": "gallery/thumbs/pbjThumb.jpg",
+	"image": "gallery/pbj.jpg",	
+	"format" : "web",
+	"isOdd" : "no"
+  },
+  {
+    "id": 6,
+    "name": "WorldSurf site design",
+    "desc": "A site design that was created for Full Sail class 'Web User Interfaces'",
+    "thumb": "gallery/thumbs/wsThumb.jpg",
+	"image": "gallery/surfWorld.jpg",	
+	"format" : "web",
+	"isOdd" : "no"
+  },
+  {
+    "id": 7,
+    "name": "GMC Vacation site redesign",
+    "desc": "This is a site redesign I built for a client. The design was built in Photoshop and the site was built using the Codeigniter framework, javascript, html, css, and php. It is still a work in progress and is planned to be up and running soon.",
+    "thumb": "gallery/thumbs/gmcThumb.jpg",
+	"image": "gallery/gmc.jpg",	
+	"format" : "web",
+	"isOdd" : "odd"
+  },
+  {
+    "id": 8,
+    "name": "Red5 site design",
+    "desc": "A site and Ui specific design that was created for Full Sail class 'Advanced Design Techniques'",
+    "thumb": "gallery/thumbs/redLogo.jpg",
+	"image": "gallery/red5.jpg",	
+	"format" : "web",
+	"isOdd" : "no"
+  },
+  {
+    "id": 9,
+    "name": "SFW I site",
+    "desc": "A site built for Full Sail class 'Scripting for Web I'. It was used as a site to practice our JavaScript techniques and knowledge to built custom plug-ins and effects.",
+    "thumb": "gallery/thumbs/sfwThumb.jpg",
+	"image": "gallery/sfw.jpg",	
+	"format" : "web",
+	"isOdd" : "no"
+  },
+  {
+    "id": 10,
+    "name": "RMO site",
+    "desc": "A site built for Full Sail class 'Rich Media Optimization'. Built with HTML5 and demonstrates knowledge of embedding video and audio using HTML5 tags and various media formats.",
+    "thumb": "gallery/thumbs/rmoThumb.jpg",
+	"image": "gallery/rmo.jpg",	
+	"format" : "web",
+	"isOdd" : "odd"
+  },
+  {
+    "id": 11,
+    "name": "A. Parent Designs",
+    "desc": "A portfolio site built for my friend, utilizes various jquery plug-ins for added engagment and effect.",
+    "thumb": "gallery/thumbs/apdThumb.jpg",
+	"image": "gallery/apd.jpg",	
+	"format" : "web",
+	"isOdd" : "no"
+  },
+  {
+    "id": 12,
+    "name": "Color Blind",
+    "desc": "A image I created in Photoshop that utilizes negative colors and image masks using various brushes to create a cool effect.",
+    "thumb": "gallery/thumbs/cmaThumb.jpg",
+	"image": "gallery/cma.jpg",	
+	"format" : "print",
+	"isOdd" : "no"
+  }
+]

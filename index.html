@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -29,7 +29,7 @@
   </header>
   <section data-role="content">
     <div id="headImg"> <img src="imgs/test_2.jpg" title="Header Image" /> </div>
-    <div id="quotes"> <img src="imgs/twitter_bird_03.png" title="Twitter&reg;" />
+    <div id="quotes"> <img src="imgs/quotes_03.png" title="big quotes" />
       <p class="quote"><span>"</span>Hendrerit in vulputate velit esse molestie consequat vel illum dolore eu feugiat nulla. Blandit praesent luptatum zzril delenit augue duis dolore te.<span>"</span></p>
     </div>
     <div id="ctaNav">
@@ -39,11 +39,7 @@
         <li><a href="#contact" class="ctaContact">contact</a></li>
       </ul>
       <div class="ctaAd">
-        <div class="pics"> 
-        	<a href="#resume"><img src="imgs/ctaAd_03.png" /></a> 
-            <a href="#gallery"><img src="imgs/ctaAd_06.png" /></a> 
-            <a href="#contact"><img src="imgs/ctaAd_08.png" /></a>
-        </div>
+        <div class="pics"> <a href="#resume"><img src="imgs/ctaAd_03.png" /></a> <a href="#gallery"><img src="imgs/ctaAd_06.png" /></a> <a href="#contact"><img src="imgs/ctaAd_08.png" /></a> </div>
       </div>
     </div>
     <div id="about">
@@ -213,25 +209,10 @@
     <p><img src="imgs/logo_03.png" title="CmA designs" /></p>
   </header>
   <section data-role="content" class="imgGallery">
-    <div data-role="controlgroup" data-type="horizontal" class="buttonGroup" data-mini="true"> 
-    	<a href="#" data-role="button" data-theme="a" class="printBtn">Print</a> 
-        <a href="#" data-role="button" data-theme="a" class="allBtn">All Work</a> 
-        <a href="#" data-role="button" data-theme="a" class="webBtn">Web</a> 
-    </div>
+    <div data-role="controlgroup" data-type="horizontal" class="buttonGroup" data-mini="true"> <a href="#" data-role="button" data-theme="a" class="printBtn">Print</a> <a href="#" data-role="button" data-theme="a" class="allBtn">All Work</a> <a href="#" data-role="button" data-theme="a" class="webBtn">Web</a> </div>
     <p>Tap on an image to see details</p>
-    <div id="masonry">
-      <div class="item print"><a href="#details"><img src="gallery/thumbs/gaugesThumb.jpg" class="odd"/></a></div>
-      <div class="item print"><a href="#"><img src="gallery/thumbs/fishLogo.jpg" /></a></div>
-      <div class="item print"><a href="#"><img src="gallery/thumbs/aicThumb.jpg" /></a></div>
-      <div class="item web"><a href="#"><img src="gallery/thumbs/sfw2Thumb.jpg" class="odd"/></a></div>
-      <div class="item web"><a href="#"><img src="gallery/thumbs/pbjThumb.jpg" /></a></div>
-      <div class="item web"><a href="#"><img src="gallery/thumbs/wsThumb.jpg" /></a></div>
-      <div class="item web"><a href="#"><img src="gallery/thumbs/gmcThumb.jpg" class="odd"/></a></div>
-      <div class="item web"><a href="#"><img src="gallery/thumbs/redLogo.jpg" /></a></div>
-      <div class="item web"><a href="#"><img src="gallery/thumbs/sfwThumb.jpg" /></a></div>
-      <div class="item web"><a href="#"><img src="gallery/thumbs/rmoThumb.jpg" class="odd"/></a></div>
-      <div class="item web"><a href="#"><img src="gallery/thumbs/apdThumb.jpg" /></a></div>
-      <div class="item print"><a href="#"><img src="gallery/thumbs/cmaThumb.jpg" /></a></div>
+    <div id="masonry"> 
+      <!-- images loaded here via AJAX --> 
     </div>
   </section>
   <footer data-role="footer" data-position="fixed">
@@ -253,6 +234,9 @@
   <header>
     <p><img src="imgs/logo_03.png" title="CmA designs" /></p>
   </header>
+  <div id="response">
+  	<p>Error Message</p>
+  </div>
   <section data-role="content" class="form">
     <form action="?" method="post">
       <label for="name">Contact Name</label>
@@ -321,15 +305,35 @@
     <!-- /navbar --> 
   </footer>
 </article>
-<!-- ==========  end Page  ========== -->
+<!-- ==========  end Page  ========== --> 
 <!-- ==========  Page  ============= -->
 <article id="details" data-role="page">
   <header>
     <p><img src="imgs/logo_03.png" title="CmA designs" /></p>
   </header>
-  <section data-role="content" id="connect">
-  	<h3>Name of Work</h3>
+  <section data-role="content" id="thaDeets">
+    <h3>Name of Work</h3>
     <img src="gallery/gauges.jpg" title="Digital Car Guage" width="100%" />
+    <h4>description:</h4>
+    <p>Ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit! Et quinta decima eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes. Nihil imperdiet doming id quod mazim placerat facer possim assum typi non habent claritatem insitam est. Ut laoreet dolore magna aliquam erat volutpat ut. Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod?</p>
+  </section>
+  <footer data-role="footer" data-position="fixed">
+    <div data-role="navbar" class="noStyle">
+      <ul>
+        <li><a href="#resume" class="resume" data-icon="custom">Resume</a></li>
+        <li><a href="#gallery" class="gallery active" data-icon="custom">Gallery</a></li>
+        <li><a href="#home" class="hatch" data-icon="custom">Home</a></li>
+        <li><a href="#contact" class="contact" data-icon="custom">Contact</a></li>
+        <li><a href="#social" class="social" data-icon="custom">Social</a></li>
+      </ul>
+    </div>
+    <!-- /navbar --> 
+  </footer>
+</article>
+<!-- ==========  end Page  ========== -->
+
+</body>
+</html> title="Digital Car Guage" width="100%" />
     <p>Ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit! Et quinta decima eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes. Nihil imperdiet doming id quod mazim placerat facer possim assum typi non habent claritatem insitam est. Ut laoreet dolore magna aliquam erat volutpat ut. Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod?</p>
   </section>
   <footer data-role="footer" data-position="fixed">
