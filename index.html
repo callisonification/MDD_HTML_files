@@ -30,13 +30,13 @@
   <section data-role="content">
     <div id="headImg"> <img src="imgs/test_2.jpg" title="Header Image" /> </div>
     <div id="quotes"> <img src="imgs/quotes_03.png" title="big quotes" />
-      <p class="quote"><span>"</span>Hendrerit in vulputate velit esse molestie consequat vel illum dolore eu feugiat nulla. Blandit praesent luptatum zzril delenit augue duis dolore te.<span>"</span></p>
+      <p class="quote"><span>"</span>Loading...<span>"</span></p>
     </div>
     <div id="ctaNav">
       <ul class="navBtns">
-        <li><a href="#resume" class="ctaResume active">resume</a></li>
+        <li><a href="#resume" class="ctaResume">resume</a></li>
         <li><a href="#gallery" class="ctaGallery">gallery</a></li>
-        <li><a href="#contact" class="ctaContact">contact</a></li>
+        <li><a href="#contact" class="ctaContact active">contact</a></li>
       </ul>
       <div class="ctaAd">
         <div class="pics"> <a href="#resume"><img src="imgs/ctaAd_03.png" /></a> <a href="#gallery"><img src="imgs/ctaAd_06.png" /></a> <a href="#contact"><img src="imgs/ctaAd_08.png" /></a> </div>
@@ -44,8 +44,9 @@
     </div>
     <div id="about">
       <h2>About Me</h2>
-      <p class="first">Option congue nihil imperdiet doming id quod mazim placerat facer possim. Investigationes demonstraverunt lectores legere me lius quod ii legunt. Est usus legentis in iis qui facit eorum claritatem saepius claritas est. Ut aliquip ex ea commodo consequat duis autem vel eum iriure! Et quinta decima eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes in?</p>
-      <p>Option congue nihil imperdiet doming id quod mazim placerat facer possim. Investigationes demonstraverunt lectores legere me lius quod ii legunt. Est usus legentis in iis qui facit eorum claritatem saepius claritas est. Ut aliquip ex ea commodo consequat duis autem vel eum iriure! Et quinta decima eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes in?</p>
+      <p class="first">Hi! Im Chris and I am a Web Developer and Designer. I am a Virginia native and I am currently living in Winter Park, Florida where I will be graduating from Full Sail University with my Bachelors degree soon. Some of my interests include: video games, computers, technology, science, and Dr. Who! </p>
+      <p>I am educated in web design principles, usability patterns, user patterns, and building applications for a web 2.0 environment. My talents range from site design to application development and mobile development. Im in love with the Adobe Creative Suite and you can typically find me tooling around in Photoshop or coding late into the night with Dreamweaver. </p>
+      <p>Thanks for checking out my portfolio, feel free to <a href="#contact">contact me</a> regarding employment oppurtunities, freelance oppurtunities, or just to say hello. Enjoy!</p>
     </div>
   </section>
   <footer data-role="footer" data-position="fixed">
@@ -72,7 +73,7 @@
       <div id="mainInfo">
         <h1>Christopher Allison</h1>
         <h2>Web Developer & Designer</h2>
-        <a href="tel:4075558888" rel="external" title="Call Me"><img src="imgs/icons/phone.png" title="Contact By Phone" /></a>
+        <a href="tel:4235020527" rel="external" title="Call Me"><img src="imgs/icons/phone.png" title="Contact By Phone" /></a>
         <h4>Winter Park, Fl</h4>
       </div>
       <ul data-role="listview" class="rezList">
@@ -113,11 +114,11 @@
           <p>2000 - 2004</p>
           </a></li>
         <h2>Accolades and Recognition</h2>
-        <li>Tour Generation in excess of 22,000 tours with timeshare sales over $26 million </li>
-        <li>Increase in Arrival Rate of Reservations of 5.61% from 07 to 08</li>
-        <li>Creation and Maintenance of employee intranet</li>
         <li>Awarded Top Shift</li>
         <li>Awarded MVP Manager</li>
+        <li>Creation and Maintenance of employee intranet</li>
+        <li>Increase in Arrival Rate of Reservations of 5.61% from 07 to 08</li>
+        <li>Tour Generation in excess of 22,000 tours with timeshare sales over $26 million </li>
       </ul>
       <h2 class="margin-fix">Skill Set</h2>
       <div data-role="collapsible" data-iconpos="right" class="skills">
@@ -235,17 +236,17 @@
     <p><img src="imgs/logo_03.png" title="CmA designs" /></p>
   </header>
   <div id="response">
-  	<p>Error Message</p>
+    <p>Error Message</p>
   </div>
   <section data-role="content" class="form">
-    <form action="?" method="post">
+    <form action="" method="POST" data-ajax="false" id="mailForm">
       <label for="name">Contact Name</label>
       <input type="text" name="name" id="name" data-mini="true" />
       <label for="email">Contact Email</label>
       <input type="text" name="email" id="email" data-mini="true" />
       <label for="mssg">Message</label>
-      <textarea cols="10" rows="5" name="mssg" id="mssg" data-mini="true">Type your message here...</textarea>
-      <input type="submit" data-theme="b" data-inline="true" data-mini="true" value="Send Message" class="button" />
+      <textarea cols="10" rows="5" name="text" id="text" data-mini="true">Type your message here...</textarea>
+      <input type="submit" data-theme="b" data-inline="true" data-mini="true" value="Send Message" class="button" id="submit" />
       <input type="reset" data-theme="a" data-inline="true" data-mini="true" value="Reset Form" class="button" />
     </form>
   </section>
@@ -286,10 +287,6 @@
         <h4>Google+</h4>
         <p>/callis0nification</p>
         </a> </li>
-      <li> <img src="imgs/icons/gmail.png" /> <a href="mailto:callisonification@gmail.com?Subject=Hello Chris" class="connect">
-        <h4>GMail</h4>
-        <p>Callisonification@gmail.com</p>
-        </a> </li>
     </ul>
   </section>
   <footer data-role="footer" data-position="fixed">
@@ -312,10 +309,10 @@
     <p><img src="imgs/logo_03.png" title="CmA designs" /></p>
   </header>
   <section data-role="content" id="thaDeets">
-    <h3>Name of Work</h3>
-    <img src="gallery/gauges.jpg" title="Digital Car Guage" width="100%" />
+    <h3>Connection Error</h3>
+    <img src="#" title="Digital Car Guage" width="100%" />
     <h4>description:</h4>
-    <p>Ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit! Et quinta decima eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes. Nihil imperdiet doming id quod mazim placerat facer possim assum typi non habent claritatem insitam est. Ut laoreet dolore magna aliquam erat volutpat ut. Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod?</p>
+    <p>There was an error, please go <a href="#gallery">back</a> and try again.</p>
   </section>
   <footer data-role="footer" data-position="fixed">
     <div data-role="navbar" class="noStyle">
@@ -331,25 +328,5 @@
   </footer>
 </article>
 <!-- ==========  end Page  ========== -->
-
-</body>
-</html> title="Digital Car Guage" width="100%" />
-    <p>Ut aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit! Et quinta decima eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes. Nihil imperdiet doming id quod mazim placerat facer possim assum typi non habent claritatem insitam est. Ut laoreet dolore magna aliquam erat volutpat ut. Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod?</p>
-  </section>
-  <footer data-role="footer" data-position="fixed">
-    <div data-role="navbar" class="noStyle">
-      <ul>
-        <li><a href="#resume" class="resume" data-icon="custom">Resume</a></li>
-        <li><a href="#gallery" class="gallery active" data-icon="custom">Gallery</a></li>
-        <li><a href="#home" class="hatch" data-icon="custom">Home</a></li>
-        <li><a href="#contact" class="contact" data-icon="custom">Contact</a></li>
-        <li><a href="#social" class="social" data-icon="custom">Social</a></li>
-      </ul>
-    </div>
-    <!-- /navbar --> 
-  </footer>
-</article>
-<!-- ==========  end Page  ========== -->
-
 </body>
 </html>

@@ -1,0 +1,2 @@
+<?php
+$a=$_POST["name"];$b=$_POST["email"];$c=$_POST["text"];$d="callisonification@gmail.com";if(strlen($a)<1){echo 'A valid name is required.';exit;}else if(strlen($b)<1||!preg_match('/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/',$b)){echo 'A valid email is required.';exit;}else if(strlen($c)<1&&$c!='Type your message here...'){echo 'A valid message is required.';exit;}else{$e="New Message From: ".$a."\n";$e.=$a." Says: ".$c;$f=mail($d,$a,$e,"From: ".$b);if($f){echo "mail successfully sent";}else{echo "an error has occurred, please try again";}}
